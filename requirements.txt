@@ -1,6 +1,6 @@
 # File: requirements.txt
 
 fastapi>=0.100.0
-uvicorn>=0.23.0 # For local development and as ASGI server
-httpx>=0.24.0   # For making asynchronous HTTP requests
-python-dotenv>=1.0.0 # Optional: for managing environment variables if you use a .env file locally
+uvicorn>=0.23.0 
+httpx>=0.24.0
+python-dotenv>=1.0.0
