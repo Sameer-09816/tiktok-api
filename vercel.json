@@ -2,14 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.py",    // Path to your main FastAPI application file
-      "use": "@vercel/python",  // Specifies the Python builder
-      "config": { "maxLambdaSize": "50mb" } // Optional: increase if needed
+      "src": "api/index.py",    
+      "use": "@vercel/python",  
+      "config": { "maxLambdaSize": "50mb" } 
     }
   ],
   "routes": [
-    // Route all requests to the FastAPI application
-    // The FastAPI app itself will handle routing for /api/proxy, /, etc.
+    
     {
       "src": "/(.*)",
       "dest": "api/index.py"
